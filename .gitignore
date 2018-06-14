@@ -1,7 +1,11 @@
 #.gitignore
 
 #Java files
-.class
+*.class
 
 #Executable files
-.exe
+*.exe
+
+#Exclude bin
+
+bin/
