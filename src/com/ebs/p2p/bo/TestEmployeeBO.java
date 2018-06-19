@@ -20,7 +20,8 @@ assertEquals(96000, yearlySal,  0.0);
 public void testCalculateAppraisal(){
 
 double appraisal = empBO.calculateAppraisal(emp);
-assertEquals(96000, appraisal,0.0);
+//assertEquals(96000, appraisal,0.0);
+assertEquals(500, appraisal,0.0);
 
 }
 
