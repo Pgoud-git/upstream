@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<project name="jenkins-tests" basedir="." default="prepare">
+<project name="jenkins-tests" basedir="." default="all">
 
 <property name="junit.output.dir" value="output"/>
 <property name="src.dir" value="src"/>
@@ -64,4 +64,6 @@
         <report format="frames" todir="${junit.output.dir}/reports" />
     </junitreport>
 </target>
+
+<target name="all" depends="prepare,compile,test,test-reports"/>
 </project>
